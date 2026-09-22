@@ -149,6 +149,115 @@ img {
   margin: 0;
 }
 
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0 0;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #f3ecd9;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(215, 198, 143, 0.5);
+  border-radius: 999px;
+  padding: 8px 16px;
+}
+
+.hero-badge svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.btn-hero-primary {
+  display: inline-block;
+  padding: 13px 28px;
+  border-radius: 4px;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  border: 1px solid var(--color-accent);
+}
+
+.btn-hero-primary:hover {
+  background: #8f6c26;
+  border-color: #8f6c26;
+  text-decoration: none;
+}
+
+.btn-hero-secondary {
+  display: inline-block;
+  padding: 13px 28px;
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.btn-hero-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+}
+
+/* ---------- Stats bar ---------- */
+
+.stats-bar-wrap {
+  background: transparent;
+  margin-top: -36px;
+  position: relative;
+  z-index: 2;
+}
+
+.stats-bar {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(26, 47, 75, 0.14);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px 10px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  border-right: 1px solid var(--color-border);
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-num {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--color-text-soft);
+  letter-spacing: 0.03em;
+}
+
 .page-hero {
   background: var(--color-bg-soft);
   border-bottom: 1px solid var(--color-border);
@@ -245,6 +354,136 @@ h2.section-title {
 .business-card .card-link {
   font-size: 0.85rem;
   font-weight: 600;
+}
+
+/* ---------- Reason cards (top page) ---------- */
+
+.reason-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.reason-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 28px 22px;
+  text-align: center;
+}
+
+.reason-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-bg-soft);
+  margin-bottom: 16px;
+}
+
+.reason-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--color-primary-soft);
+}
+
+.reason-card h3 {
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin: 0 0 10px;
+}
+
+.reason-card p {
+  font-size: 0.86rem;
+  color: var(--color-text-soft);
+  margin: 0;
+}
+
+/* ---------- Sendai section (top page) ---------- */
+
+.sendai-section {
+  position: relative;
+  padding: 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+.sendai-illustration {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  line-height: 0;
+}
+
+.sendai-illustration svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.sendai-content {
+  position: relative;
+  z-index: 1;
+  padding: 90px 24px;
+  max-width: 720px;
+}
+
+.sendai-title {
+  color: #fff;
+}
+
+.sendai-lead {
+  color: #dbe2ec;
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+/* ---------- CTA banner (top page) ---------- */
+
+.cta-banner {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 56px 0;
+}
+
+.cta-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.cta-banner h2 {
+  font-size: 1.3rem;
+  margin: 0 0 8px;
+}
+
+.cta-banner p {
+  color: #c7d0dd;
+  margin: 0;
+  max-width: 520px;
+  font-size: 0.92rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 13px 28px;
+  border-radius: 4px;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  border: 1px solid var(--color-accent);
+  white-space: nowrap;
+}
+
+.btn-cta:hover {
+  background: #8f6c26;
+  border-color: #8f6c26;
+  text-decoration: none;
 }
 
 /* ---------- Table (company overview) ---------- */
@@ -506,5 +745,31 @@ h2.section-title {
   .info-table th {
     width: 120px;
     font-size: 0.82rem;
+  }
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+  }
+  .stat-item:nth-child(2) {
+    border-right: none;
+  }
+  .reason-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sendai-content {
+    padding: 64px 24px;
+  }
+  .cta-banner-inner {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .reason-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-bar {
+    grid-template-columns: 1fr 1fr;
   }
 }
