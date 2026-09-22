@@ -4,13 +4,13 @@
 
 :root {
   --color-bg: #ffffff;
-  --color-bg-soft: #f5f6f8;
+  --color-bg-soft: #eef5ee;
   --color-text: #1f2530;
   --color-text-soft: #5b6472;
-  --color-border: #e1e4e9;
-  --color-primary: #1a2f4b;
-  --color-primary-soft: #2c4a70;
-  --color-accent: #a9822f;
+  --color-border: #d9e8db;
+  --color-primary: #1f4a30;
+  --color-primary-soft: #3f7a54;
+  --color-accent: #6fa87f;
   --font-base: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
   --max-width: 1080px;
 }
@@ -131,7 +131,7 @@ img {
 .hero-eyebrow {
   font-size: 0.85rem;
   letter-spacing: 0.12em;
-  color: #d7c68f;
+  color: #bfe0c9;
   margin-bottom: 14px;
 }
 
@@ -144,7 +144,7 @@ img {
 
 .hero p {
   font-size: 1rem;
-  color: #dbe2ec;
+  color: #dcecdf;
   max-width: 640px;
   margin: 0;
 }
@@ -161,9 +161,9 @@ img {
   align-items: center;
   gap: 8px;
   font-size: 0.82rem;
-  color: #f3ecd9;
+  color: #e8f5ea;
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(215, 198, 143, 0.5);
+  border: 1px solid rgba(111, 168, 127, 0.5);
   border-radius: 999px;
   padding: 8px 16px;
 }
@@ -194,8 +194,8 @@ img {
 }
 
 .btn-hero-primary:hover {
-  background: #8f6c26;
-  border-color: #8f6c26;
+  background: #57946a;
+  border-color: #57946a;
   text-decoration: none;
 }
 
@@ -227,7 +227,7 @@ img {
 .stats-bar {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 12px 32px rgba(26, 47, 75, 0.14);
+  box-shadow: 0 12px 32px rgba(31, 74, 48, 0.14);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 30px 10px;
@@ -326,7 +326,7 @@ h2.section-title {
 }
 
 .business-card:hover {
-  box-shadow: 0 8px 24px rgba(26, 47, 75, 0.08);
+  box-shadow: 0 8px 24px rgba(31, 74, 48, 0.08);
   transform: translateY(-2px);
 }
 
@@ -435,7 +435,7 @@ h2.section-title {
 }
 
 .sendai-lead {
-  color: #dbe2ec;
+  color: #dcecdf;
   margin: 0;
   font-size: 0.98rem;
 }
@@ -462,7 +462,7 @@ h2.section-title {
 }
 
 .cta-banner p {
-  color: #c7d0dd;
+  color: #c9d9cd;
   margin: 0;
   max-width: 520px;
   font-size: 0.92rem;
@@ -481,8 +481,8 @@ h2.section-title {
 }
 
 .btn-cta:hover {
-  background: #8f6c26;
-  border-color: #8f6c26;
+  background: #57946a;
+  border-color: #57946a;
   text-decoration: none;
 }
 
@@ -683,7 +683,7 @@ h2.section-title {
 
 .site-footer {
   background: var(--color-primary);
-  color: #cfd6e0;
+  color: #cfe0d3;
   padding: 44px 0 28px;
   margin-top: 60px;
 }
@@ -712,13 +712,13 @@ h2.section-title {
 }
 
 .site-footer nav a {
-  color: #cfd6e0;
+  color: #cfe0d3;
   font-size: 0.85rem;
 }
 
 .site-footer .copyright {
   font-size: 0.78rem;
-  color: #93a0b3;
+  color: #8fa896;
   border-top: 1px solid rgba(255,255,255,0.12);
   padding-top: 18px;
 }
