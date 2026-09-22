@@ -604,7 +604,7 @@ h2.section-title {
 }
 
 .timeline .year {
-  flex: 0 0 110px;
+  flex: 0 0 190px;
   font-weight: 700;
   color: var(--color-primary);
 }
@@ -745,6 +745,13 @@ h2.section-title {
   .info-table th {
     width: 120px;
     font-size: 0.82rem;
+  }
+  .timeline li {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .timeline .year {
+    flex-basis: auto;
   }
   .stats-bar {
     grid-template-columns: repeat(2, 1fr);
