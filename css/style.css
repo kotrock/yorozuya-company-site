@@ -1,0 +1,510 @@
+/* ============================================
+   萬屋カンパニー 法人サイト 共通スタイル
+   ============================================ */
+
+:root {
+  --color-bg: #ffffff;
+  --color-bg-soft: #f5f6f8;
+  --color-text: #1f2530;
+  --color-text-soft: #5b6472;
+  --color-border: #e1e4e9;
+  --color-primary: #1a2f4b;
+  --color-primary-soft: #2c4a70;
+  --color-accent: #a9822f;
+  --font-base: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+  --max-width: 1080px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.8;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-primary-soft);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.logo-main {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.04em;
+}
+
+.logo-sub {
+  font-size: 0.7rem;
+  color: var(--color-text-soft);
+  letter-spacing: 0.08em;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: var(--color-text);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 4px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-soft) 100%);
+  color: #fff;
+  padding: 90px 0 70px;
+}
+
+.hero .container {
+  max-width: var(--max-width);
+}
+
+.hero-eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  color: #d7c68f;
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin: 0 0 18px;
+  line-height: 1.5;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #dbe2ec;
+  max-width: 640px;
+  margin: 0;
+}
+
+.page-hero {
+  background: var(--color-bg-soft);
+  border-bottom: 1px solid var(--color-border);
+  padding: 56px 0;
+}
+
+.page-hero h1 {
+  font-size: 1.7rem;
+  color: var(--color-primary);
+  margin: 0 0 10px;
+}
+
+.page-hero p {
+  color: var(--color-text-soft);
+  margin: 0;
+}
+
+.breadcrumb {
+  font-size: 0.8rem;
+  color: var(--color-text-soft);
+  margin-bottom: 14px;
+}
+
+.breadcrumb a {
+  color: var(--color-text-soft);
+}
+
+/* ---------- Sections ---------- */
+
+section {
+  padding: 64px 0;
+}
+
+section.alt {
+  background: var(--color-bg-soft);
+}
+
+h2.section-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin: 0 0 8px;
+}
+
+.section-lead {
+  color: var(--color-text-soft);
+  margin: 0 0 36px;
+  max-width: 700px;
+}
+
+/* ---------- Business cards (top page) ---------- */
+
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.business-card {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 28px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.business-card:hover {
+  box-shadow: 0 8px 24px rgba(26, 47, 75, 0.08);
+  transform: translateY(-2px);
+}
+
+.business-card .tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: var(--color-accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.business-card h3 {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin: 0 0 12px;
+}
+
+.business-card p {
+  color: var(--color-text-soft);
+  font-size: 0.92rem;
+  flex-grow: 1;
+  margin: 0 0 16px;
+}
+
+.business-card .card-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* ---------- Table (company overview) ---------- */
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 8px;
+}
+
+.info-table th,
+.info-table td {
+  text-align: left;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.info-table th {
+  width: 200px;
+  color: var(--color-text-soft);
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: var(--color-bg-soft);
+}
+
+.info-table td {
+  font-size: 0.95rem;
+}
+
+.note {
+  font-size: 0.82rem;
+  color: var(--color-text-soft);
+  margin-top: 12px;
+}
+
+.placeholder {
+  color: #b28a2f;
+  background: #fdf6e8;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* ---------- Business detail blocks ---------- */
+
+.biz-block {
+  border-top: 1px solid var(--color-border);
+  padding: 44px 0;
+}
+
+.biz-block:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.biz-block .tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: var(--color-accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.biz-block h2 {
+  font-size: 1.35rem;
+  color: var(--color-primary);
+  margin: 0 0 16px;
+}
+
+.biz-block p {
+  color: var(--color-text-soft);
+  max-width: 720px;
+  margin: 0 0 16px;
+}
+
+.biz-block .license {
+  font-size: 0.85rem;
+  color: var(--color-text-soft);
+  background: var(--color-bg-soft);
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  color: var(--color-primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.btn:hover {
+  background: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ---------- History / timeline ---------- */
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 700px;
+}
+
+.timeline li {
+  display: flex;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.timeline .year {
+  flex: 0 0 110px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.timeline .desc {
+  color: var(--color-text-soft);
+}
+
+/* ---------- Stores ---------- */
+
+.store-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.store-card {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 24px;
+  background: #fff;
+}
+
+.store-card h3 {
+  color: var(--color-primary);
+  font-size: 1.05rem;
+  margin: 0 0 10px;
+}
+
+.store-card dl {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+}
+
+.store-card dt {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.store-card dd {
+  margin: 2px 0 0;
+}
+
+/* ---------- Contact ---------- */
+
+.contact-box {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 32px;
+  background: var(--color-bg-soft);
+  max-width: 600px;
+}
+
+.contact-box dl {
+  margin: 0;
+}
+
+.contact-box dt {
+  font-weight: 600;
+  color: var(--color-text-soft);
+  font-size: 0.85rem;
+  margin-top: 16px;
+}
+
+.contact-box dt:first-child {
+  margin-top: 0;
+}
+
+.contact-box dd {
+  margin: 4px 0 0;
+  font-size: 1rem;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  background: var(--color-primary);
+  color: #cfd6e0;
+  padding: 44px 0 28px;
+  margin-top: 60px;
+}
+
+.site-footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.site-footer .footer-name {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.site-footer nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer nav a {
+  color: #cfd6e0;
+  font-size: 0.85rem;
+}
+
+.site-footer .copyright {
+  font-size: 0.78rem;
+  color: #93a0b3;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 18px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 800px) {
+  .business-grid {
+    grid-template-columns: 1fr;
+  }
+  .store-list {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .site-header .container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .main-nav ul {
+    gap: 16px;
+  }
+  .info-table th {
+    width: 120px;
+    font-size: 0.82rem;
+  }
+}
