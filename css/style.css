@@ -604,7 +604,7 @@ h2.section-title {
 }
 
 .timeline .year {
-  flex: 0 0 190px;
+  flex: 0 0 130px;
   font-weight: 700;
   color: var(--color-primary);
 }
