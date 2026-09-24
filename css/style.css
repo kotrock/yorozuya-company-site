@@ -53,6 +53,25 @@ img {
   padding: 0 24px;
 }
 
+/* ---------- Skip link ---------- */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 0 0 4px 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 /* ---------- Header ---------- */
 
 .site-header {
