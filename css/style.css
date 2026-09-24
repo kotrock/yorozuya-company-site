@@ -560,6 +560,19 @@ h2.section-title {
   margin: 0 0 16px;
 }
 
+.signature {
+  text-align: right;
+  color: var(--color-text-soft);
+  max-width: 720px;
+  margin: 32px 0 0;
+}
+
+.signature .signature-name {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
 .biz-block .license {
   font-size: 0.85rem;
   color: var(--color-text-soft);
