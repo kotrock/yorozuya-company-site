@@ -131,12 +131,27 @@ img {
 /* ---------- Hero ---------- */
 
 .hero {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-soft) 100%);
   color: #fff;
   padding: 90px 0 70px;
 }
 
+.hero-bg-photo {
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/hero/hero-bg.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  opacity: 0.2;
+  z-index: 0;
+  filter: grayscale(20%);
+}
+
 .hero .container {
+  position: relative;
+  z-index: 2;
   max-width: var(--max-width);
 }
 
