@@ -37,3 +37,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var FOUNDING_YEAR = 1988;
+  var yearsEl = document.getElementById('years-since-founding');
+
+  if (yearsEl) {
+    yearsEl.textContent = new Date().getFullYear() - FOUNDING_YEAR;
+  }
+});
